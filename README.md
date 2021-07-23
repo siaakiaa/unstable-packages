@@ -79,7 +79,6 @@ Here is a list of available packages with some information about their usability
 | racket            |             |             |                                                  |
 | rapidjson         |             |             | Not tested.                                      |
 | restic-server     |             |             | Not tested.                                      |
-| rustc-nightly     |             |             | Nightly branch of Rust.                          |
 | samba             |             | preferable  | smbd CPU usage may go to 100%. Hardcoded root account. |
 | shtool            |             |             | Not tested.                                      |
 | smalltalk         |             |             |                                                  |
@@ -106,5 +105,6 @@ These packages are excluded from main source tree. Some of them may be available
 
 - **roc** - doesn't support CI autobuilds as requires Pulseaudio build directory.
 
+- **rustc-nightly** - needs update & fix for build.sh.
 
 [termux-packages]: <https://github.com/termux/termux-packages>
