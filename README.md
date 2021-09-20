@@ -84,7 +84,7 @@ Here is a list of available packages with some information about their usability
 | tcc               |             |             | No support for generation of PIE executables.    |
 | telegram-cli      |             |             | May crash under certain conditions.              |
 | texlive-installer |             |             | Updates of infra packages changes settings, breaking texlive |
-| vlang             |             |             | Not tested.                                      |
+| vlang             |             |             | REPL is broken, everything else untested.        |
 | yara              |             |             | Always exits with `error: 31`.                   |
 | zeronet           |             |             | Uses external python modules. Installation failure. |
 
