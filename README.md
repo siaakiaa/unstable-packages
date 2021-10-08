@@ -19,7 +19,6 @@ Here is a list of available packages with some information about their usability
 | gitflow-avh       |             |             | Requires dependency list fix.                    |
 | guile18           |             |             | Is https://github.com/termux/termux-packages/issues/3360 still applicable ? |
 | guile             |             |             | Is https://github.com/termux/termux-packages/issues/3360 still applicable ? |
-| haproxy           |             |             | Not tested.                                      |
 | intltool          |             |             | Not tested. Sideloaded Perl module.              |
 | jigdo             |             |             | Not tested.                                      |
 | libburn           |             |             |                                                  |
@@ -28,19 +27,12 @@ Here is a list of available packages with some information about their usability
 | libopenfec        |             |             | Not tested.                                      |
 | libtd             |             |             |                                                  |
 | nmh               |             |             | Not tested.                                      |
-| openldap          |             |             | Not tested.                                      |
 | pandoc            |             |             | Third-party precompiled binaries.                |
 | racket            |             |             |                                                  |
-| restic-server     |             |             | Not tested.                                      |
-| samba             |             | preferable  | smbd CPU usage may go to 100%. Hardcoded root account. |
-| shtool            |             |             | Not tested.                                      |
-| smalltalk         |             |             |                                                  |
-| srelay            |             |             |                                                  |
 | surfraw           |             |             | Needs fix for hardcoded paths.                   |
 | tcc               |             |             | No support for generation of PIE executables.    |
 | telegram-cli      |             |             | May crash under certain conditions.              |
 | texlive-installer |             |             | Updates of infra packages changes settings, breaking texlive |
-| vlang             |             |             | REPL is broken, everything else untested.        |
 | yara              |             |             | Always exits with `error: 31`.                   |
 | zeronet           |             |             | Uses external python modules. Installation failure. |
 
