@@ -27,6 +27,11 @@ termux_step_host_build() {
 	make bin/tl-parser
 }
 
+termux_step_pre_configure() {
+	# avoid duplicated symbol errors
+	CFLAGS+=" -fcommon"
+}
+
 termux_step_post_configure() {
 	cp -a $TERMUX_PKG_HOSTBUILD_DIR/bin ./
 	touch -d "next hour" bin/generate bin/tl-parser
