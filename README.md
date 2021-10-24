@@ -1,37 +1,19 @@
-# Repository for unstable packages
+# Repository for new/unstable packages
 
-[![Packages last build status](https://github.com/termux/unstable-packages/workflows/Packages/badge.svg)](https://github.com/termux/unstable-packages/actions)
+This repository has been initially made as extension to [termux-packages](https://github.com/termux/termux-packages)
+in order to resolve ownership issues of https://termux.net, which led to impossibility to upload new packages
+to main repository. Introducing the "Unstable" packages repo allowed users to preview packages that soon should
+be available for installation to everyone.
 
-<img src=".github/static/powered-by-fosshost.png" alt="Powered by FossHost" width="128px"></img>
+Now as this repository doesn't do its function for years, it is going to be closed. Packages that are working will be
+moved to main repository and available out-of-box through package manager. Everything that was broken will be moved
+to directory "disabled-packages" and will wait for improvements.
 
-## Status of packages
+**Configuration package `unstable-repo` will be removed within 1-2 days, i.e. when mirrors have been synced. Git repo
+also going to be removed at this time.**
 
-Here is a list of available packages with some information about their usability.
-
-| Package           | Is stable ? | Need root ? | Notes                                            |
-|:------------------|:-----------:|:-----------:|:-------------------------------------------------|
-| atomvm            |             |             | As its readme states: AtomVM is still in its early stages. |
-| bftpd             |             |             | Needs patches in order to be usable on rootless Termux. |
-| biber             |             |             | Sideloaded.                                      |
-| electrum          |             |             | Uses external python modules.                    |
-| enscript          |             |             |                                                  |
-| fetchmail         |             |             | fetchmailconf requires tkinter in python2.       |
-| gitflow-avh       |             |             | Requires dependency list fix.                    |
-| guile18           |             |             | Is https://github.com/termux/termux-packages/issues/3360 still applicable ? |
-| guile             |             |             | Is https://github.com/termux/termux-packages/issues/3360 still applicable ? |
-| intltool          |             |             | Not tested. Sideloaded Perl module.              |
-| jigdo             |             |             | Not tested.                                      |
-| libburn           |             |             |                                                  |
-| libisoburn        |             |             | Reports sizeof(off_t) is too small for 32bit installations. Same goes for libburn and libisofs. |
-| libisofs          |             |             |                                                  |
-| libopenfec        |             |             | Not tested.                                      |
-| libtd             |             |             |                                                  |
-| nmh               |             |             | Not tested.                                      |
-| racket            |             |             |                                                  |
-| surfraw           |             |             | Needs fix for hardcoded paths.                   |
-| tcc               |             |             | No support for generation of PIE executables.    |
-| telegram-cli      |             |             | May crash under certain conditions.              |
-| texlive-installer |             |             | Updates of infra packages changes settings, breaking texlive |
-| yara              |             |             | Always exits with `error: 31`.                   |
-| zeronet           |             |             | Uses external python modules. Installation failure. |
-
+For compatibility reasons, i.e. to not break existing installations of `unstable-repo` and mirroring setups, following
+URL remains to be in use and will provide an empty apt repository.
+```
+https://packages.termux.org/apt/termux-unstable/
+```
