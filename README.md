@@ -27,7 +27,6 @@ Here is a list of available packages with some information about their usability
 | libopenfec        |             |             | Not tested.                                      |
 | libtd             |             |             |                                                  |
 | nmh               |             |             | Not tested.                                      |
-| pandoc            |             |             | Third-party precompiled binaries.                |
 | racket            |             |             |                                                  |
 | surfraw           |             |             | Needs fix for hardcoded paths.                   |
 | tcc               |             |             | No support for generation of PIE executables.    |
