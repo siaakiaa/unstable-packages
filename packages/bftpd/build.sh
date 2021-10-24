@@ -11,3 +11,7 @@ TERMUX_PKG_BUILD_IN_SRC=true
 
 TERMUX_PKG_CONFFILES="etc/bftpd.conf"
 TERMUX_PKG_RM_AFTER_INSTALL="var/log/bftpd.log"
+
+termux_step_pre_configure() {
+	CFLAGS+=" -fcommon"
+}
